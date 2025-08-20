@@ -1,68 +1,78 @@
-import type {ReactNode} from 'react';
+import React from 'react';
+import type * as ReactNamespace from 'react';
 import clsx from 'clsx';
-import Heading from '@theme/Heading';
+import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
-type FeatureItem = {
+type Feature = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: ReactNode;
+  icon: string; // simple emoji icon
+  description: React.ReactNode;
+  cta: { label: string; to: string };
 };
 
-const FeatureList: FeatureItem[] = [
+const FEATURES: Feature[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Core',
+    icon: '🧱',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        JUnit 5 base classes, Spring context helpers, and Allure reporting baked in. Build fast, readable tests with sensible defaults.
       </>
     ),
+    cta: { label: 'Explore Core', to: '/docs/modules/overview' },
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'REST',
+    icon: '🔗',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        RestAssured utilities and HTTP test scaffolding. Consistent request/response helpers and better assertions.
       </>
     ),
+    cta: { label: 'Explore REST', to: '/docs/modules/overview' },
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'WebUI',
+    icon: '🖥️',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Selenide-powered page objects with a fluent style. Stable selectors, retries, and concise actions for modern UIs.
       </>
     ),
+    cta: { label: 'Explore WebUI', to: '/docs/modules/overview' },
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function FeatureCard({ title, icon, description, cta }: Feature) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+      <div className="card">
+        <div className="card__header" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          <span style={{ fontSize: '2rem' }} aria-hidden>
+            {icon}
+          </span>
+          <h3 style={{ margin: 0 }}>{title}</h3>
+        </div>
+        <div className="card__body">
+          <p>{description}</p>
+        </div>
+        <div className="card__footer">
+          <Link className="button button--primary button--sm" to={cta.to}>
+            {cta.label}
+          </Link>
+        </div>
       </div>
     </div>
   );
 }
-
-export default function HomepageFeatures(): ReactNode {
+export default function HomepageFeatures(): ReactNamespace.JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+          {FEATURES.map((props) => (
+            <FeatureCard key={props.title} {...props} />
           ))}
         </div>
       </div>
