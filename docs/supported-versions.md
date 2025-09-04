@@ -1,18 +1,20 @@
 # 🛠️ Supported Versions
 
-QA Base is actively tested and verified against the following platforms:
+QA Base is actively tested and verified in CI pipelines against the following platforms:
 
-- **Java 17** — Baseline LTS version (minimum required)  
-- **Java 21** — Latest LTS version (fully supported and recommended)  
-- **Kotlin 2.1.x** — Latest stable Kotlin releases
+| Platform   | Supported Versions              | Notes                                    |
+|------------|---------------------------------|------------------------------------------|
+| **Java**   | 17 (LTS), 21 (LTS)              | 17 is the baseline; 21 is recommended    |
+| **Kotlin** | 2.1.x (latest stable releases)  | Full compatibility verified              |
+| **Maven/Gradle** | Latest stable versions    | Aligned with JVM + Kotlin compatibility  |
 
 ---
 
 ## 🔮 Future Compatibility
 
-- Non-LTS Java versions (e.g., 18, 19, 20, 22) *may work* but are not officially tested.  
-- QA Base aims to follow Java LTS releases closely, ensuring long-term stability.  
-- Kotlin compatibility will be updated in sync with stable releases.
+- Non-LTS Java versions (18, 19, 20, 22) *may work* but are not officially tested.
+- QA Base aims to follow **Java LTS releases** closely, ensuring long-term stability.
+- Kotlin compatibility will be updated in sync with new stable releases.
 
 ---
 
