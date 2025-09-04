@@ -20,7 +20,7 @@ const FEATURES: Feature[] = [
         JUnit 5 base classes, Spring context helpers, and Allure reporting baked in. Build fast, readable tests with sensible defaults.
       </>
     ),
-    cta: { label: 'Explore Core', to: '/docs/modules/overview' },
+    cta: { label: 'Explore Core', to: 'docs/core' },
   },
   {
     title: 'REST',
@@ -30,7 +30,7 @@ const FEATURES: Feature[] = [
         RestAssured utilities and HTTP test scaffolding. Consistent request/response helpers and better assertions.
       </>
     ),
-    cta: { label: 'Explore REST', to: '/docs/modules/overview' },
+    cta: { label: 'Explore REST', to: 'docs/rest' },
   },
   {
     title: 'WebUI',
@@ -40,7 +40,7 @@ const FEATURES: Feature[] = [
         Selenide-powered page objects with a fluent style. Stable selectors, retries, and concise actions for modern UIs.
       </>
     ),
-    cta: { label: 'Explore WebUI', to: '/docs/modules/overview' },
+    cta: { label: 'Explore WebUI', to: 'docs/webui' },
   },
 ];
 
