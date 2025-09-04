@@ -11,8 +11,7 @@ This is the official documentation site for the [QA Base Framework](https://gith
 **This documentation is living:** it is continuously updated alongside the framework's development.
 
 - **Framework GitHub:** [toobprojects/qabase-framework](https://github.com/toobprojects/qabase-framework)
-- **Published Docs:** [https://toobprojects.github.io/qabase-docs](https://github.com/toobprojects/qabase-docs)
-- 
+- **Published Docs:** [toobprojects.github.io/qabase-docs](https://github.com/toobprojects/qabase-docs)
 ---
 
 ## 🛠️ Local Development & Installation

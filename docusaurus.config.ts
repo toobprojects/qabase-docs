@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'QA Base',
   tagline: 'Test automation, simplified.',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/qa-base-icon.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
