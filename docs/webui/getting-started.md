@@ -47,3 +47,8 @@ class HomePageTest {
 ```
 
 > Failures automatically attach **screenshot + pageSource** to Allure when enabled.
+
+
+## 🔗 See it in action
+
+Want to see a real-world project using these patterns? Check out the [**QA Automation Exercise.com**](https://github.com/tlmatjuda/qa-automation-exercise-com).

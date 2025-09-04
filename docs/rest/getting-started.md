@@ -51,3 +51,8 @@ class UsersApiTest : AbstractRestTest() {   // sets RestAssured baseUri from con
   }
 }
 ```
+
+## 🔗 See it in action
+
+Want to see a real-world project using these patterns? Check out the [**QA GoRest Automation**](https://github.com/tlmatjuda/qa-gorest-automation).
+
