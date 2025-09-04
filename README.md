@@ -10,7 +10,7 @@ This site is built with [Docusaurus](https://docusaurus.io/) to provide a modern
 This is the official documentation site for the [QA Base Framework](https://github.com/toobprojects/qabase-framework) — a flexible, modular framework for test automation.  
 **This documentation is living:** it is continuously updated alongside the framework's development.
 
-- **Published Docs:** [qabase-docs](https://github.com/toobprojects/qabase-docs)
+- **Published Docs:** [qabase-docs](https://toobprojects.github.io/qabase-docs/docs)
 ---
 
 ## 🛠️ Local Development & Installation
