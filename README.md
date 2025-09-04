@@ -1,77 +1,70 @@
-# Website
+# 📘 QA Base Framework Documentation
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Welcome to the documentation repository for **QA Base Framework**!  
+This site is built with [Docusaurus](https://docusaurus.io/) to provide a modern, interactive, and continuously updated knowledge hub for all things QA Base.
 
-## Installation
+---
 
-```bash
-yarn
-```
+## 📝 What is this?
 
-## Local Development
+This is the official documentation site for the [QA Base Framework](https://github.com/toobprojects/qabase-framework) — a flexible, modular framework for test automation.  
+**This documentation is living:** it is continuously updated alongside the framework's development.
 
-```bash
-yarn start
-```
+- **Framework GitHub:** [toobprojects/qabase-framework](https://github.com/toobprojects/qabase-framework)
+- **Published Docs:** [https://toobprojects.github.io/qabase-docs](https://github.com/toobprojects/qabase-docs)
+- 
+---
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## 🛠️ Local Development & Installation
 
-## Build
-
-```bash
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
+Clone this repo and install dependencies:
 
 ```bash
-USE_SSH=true yarn deploy
+git clone https://github.com/toobprojects/qabase-docs.git
+cd qabase-docs
+yarn          # or npm install
 ```
 
-Not using SSH:
+Start the local dev server:
 
 ```bash
-GIT_USER=<Your GitHub username> yarn deploy
+yarn start    # or npm start
+# or use the script below for convenience
+./scripts/dev.sh
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+---
 
+## ⚡ Scripts in `scripts/`
+
+- **`dev.sh`**: Starts the local Docusaurus dev server.
+- **`upgrade-docusaurus.sh`**: Upgrades Docusaurus to the latest version.
+
+### Usage:
 
 ```bash
-docs/
-  intro.md
-  installation.md
-  modules-overview.md
-  supported-versions.md
-  why-qabase.md
-  tutorial-basics/...
-  tutorial-extras/...
+# Start local dev server
+./scripts/dev.sh
 
-  core/
-    index.md
-    getting-started.md
-    configuration.md
-    examples.md
-    troubleshooting.md
-    faq.md
-
-  rest/
-    index.md
-    getting-started.md
-    configuration.md
-    examples.md
-    troubleshooting.md
-    faq.md
-
-  webui/
-    index.md
-    getting-started.md
-    configuration.md
-    examples.md
-    troubleshooting.md
-    faq.md
+# Upgrade Docusaurus to latest version
+./scripts/upgrade-docusaurus.sh
 ```
+
+---
+
+## 🚀 Deployment
+
+Deployment is handled automatically via GitHub Actions, which builds and publishes the site to GitHub Pages on every push to the main branch.
+
+---
+
+
+---
+
+## 🙌 Contributing
+
+Feel free to open issues or PRs to improve the documentation or suggest changes!
+
+---
+
+_Made with ❤️ using [Docusaurus](https://docusaurus.io/)_
