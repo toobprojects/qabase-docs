@@ -19,7 +19,6 @@ QA Base is built to **eliminate the repetitive setup work** that slows down QA e
 ## 🚀 What You Get Out of the Box
 
 - ✅ Clean project structure
-- ✅ Dependency injection ready
 - ✅ Unified configuration via `application.yaml`
 - ✅ Prebuilt modules:
     - `qabase-core` → JUnit 5 + Allure integration

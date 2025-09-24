@@ -19,7 +19,7 @@ sidebar_position: 2
 **Gradle (Kotlin DSL)**
 ```kotlin
 dependencies {
-  testImplementation(platform("io.github.toobprojects:qabase-framework:1.4.1"))
+  testImplementation(platform("io.github.toobprojects:qabase-framework:2.0.0"))
   testImplementation("io.github.toobprojects:qabase-web-ui")
 }
 ```
@@ -29,20 +29,22 @@ dependencies {
 ## 2) Minimal UI test with `UI` & `Sel`
 
 ```kotlin
-import com.toob.qabase.QaBaseTest
+import com.toob.qabase.rest.QaRestTest
 import com.toob.qabase.webui.dsl.UI
 import com.toob.qabase.webui.dsl.Sel
 import org.junit.jupiter.api.Test
 
-@QaBaseTest
+@QaRestTest
 class HomePageTest {
+
   @Test
   fun canSeeProductsLink() {
-    UI.visit("/")                              // uses qabase.webui.baseUrl
+    UI.visit("/")   // uses qabase.webui.baseUrl
       .shouldSee("a[href='/products']", "Products")
     Sel.css("a[href='/products']").click()
     UI.shouldSeeText("All Products")
   }
+  
 }
 ```
 

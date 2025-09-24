@@ -19,6 +19,7 @@ const sidebars = {
         'modules-overview',
         'supported-versions',
         'why-qabase',
+        'release-notes',
 
         // Module categories first
         {

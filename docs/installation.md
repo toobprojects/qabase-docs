@@ -36,7 +36,7 @@ This is the easiest way to get started.
 <parent>
   <groupId>io.github.toobprojects</groupId>
   <artifactId>qabase-framework</artifactId>
-  <version>1.4.1</version>
+  <version>2.0.0</version>
 </parent>
 
 <dependencies>
@@ -72,7 +72,7 @@ If you prefer **flexibility**, import QA Base as a **Bill of Materials (BOM)**. 
     <dependency>
       <groupId>io.github.toobprojects</groupId>
       <artifactId>qabase-framework</artifactId>
-      <version>1.4.1</version>
+      <version>2.0.0</version>
       <type>pom</type>
       <scope>import</scope>
     </dependency>
@@ -139,13 +139,13 @@ If you are using **Gradle Groovy DSL** (`build.gradle`):
 ```groovy
 dependencies {
     // Core (JUnit 5 + Allure Reports)
-    testImplementation 'io.github.toobprojects:qabase-core:1.4.1'
+    testImplementation 'io.github.toobprojects:qabase-core:2.0.0'
 
     // REST (REST Assured utilities)
-    testImplementation 'io.github.toobprojects:qabase-rest:1.4.1'
+    testImplementation 'io.github.toobprojects:qabase-rest:2.0.0'
 
     // WebUI (Selenide utilities, optional)
-    testImplementation 'io.github.toobprojects:qabase-webui:1.4.1'
+    testImplementation 'io.github.toobprojects:qabase-webui:2.0.0'
 }
 ```
 
@@ -154,13 +154,13 @@ If you are using **Gradle Kotlin DSL** (`build.gradle.kts`):
 ```kotlin
 dependencies {
     // Core (JUnit 5 + Allure Reports)
-    testImplementation("io.github.toobprojects:qabase-core:1.4.1")
+    testImplementation("io.github.toobprojects:qabase-core:2.0.0")
 
     // REST (REST Assured utilities)
-    testImplementation("io.github.toobprojects:qabase-rest:1.4.1")
+    testImplementation("io.github.toobprojects:qabase-rest:2.0.0")
 
     // WebUI (Selenide utilities, optional)
-    testImplementation("io.github.toobprojects:qabase-webui:1.4.1")
+    testImplementation("io.github.toobprojects:qabase-webui:2.0.0")
 }
 ```
 

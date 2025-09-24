@@ -13,7 +13,7 @@ sidebar_position: 2
 <parent>
   <groupId>io.github.toobprojects</groupId>
   <artifactId>qabase-framework</artifactId>
-  <version>1.4.1</version>
+  <version>2.0.0</version>
 </parent>
 <dependencies>
   <dependency>
@@ -30,7 +30,7 @@ sidebar_position: 2
     <dependency>
       <groupId>io.github.toobprojects</groupId>
       <artifactId>qabase-framework</artifactId>
-      <version>1.4.1</version>
+      <version>2.0.0</version>
       <type>pom</type>
       <scope>import</scope>
     </dependency>
@@ -49,7 +49,7 @@ sidebar_position: 2
 <dependency>
   <groupId>io.github.toobprojects</groupId>
   <artifactId>qabase-core</artifactId>
-  <version>1.4.1</version>
+  <version>2.0.0</version>
 </dependency>
 ```
 
@@ -57,7 +57,7 @@ sidebar_position: 2
 ```kotlin
 // Parent-like setup isn't native in Gradle; use the BOM for versions
 dependencies {
-  testImplementation(platform("io.github.toobprojects:qabase-framework:1.4.1"))
+  testImplementation(platform("io.github.toobprojects:qabase-framework:2.0.0"))
   testImplementation("io.github.toobprojects:qabase-core")
 }
 ```

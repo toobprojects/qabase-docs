@@ -19,7 +19,7 @@ sidebar_position: 2
 **Gradle (Kotlin DSL)**
 ```kotlin
 dependencies {
-  testImplementation(platform("io.github.toobprojects:qabase-framework:1.4.1"))
+  testImplementation(platform("io.github.toobprojects:qabase-framework:2.0.0"))
   testImplementation("io.github.toobprojects:qabase-rest")
 }
 ```
@@ -32,7 +32,7 @@ dependencies {
 import com.toob.qabase.QaBaseTest
 import com.toob.qabase.rest.AbstractRestTest
 import com.toob.qabase.rest.client.RestClient
-import com.toob.qabase.rest.support.HttpSupport.expect
+import com.toob.qabase.rest.assertions.RestAssertions.expect;
 import com.toob.qabase.rest.support.StatusFamily
 import org.junit.jupiter.api.Test
 
